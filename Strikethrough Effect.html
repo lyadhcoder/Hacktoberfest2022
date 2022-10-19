@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 2px solid #dd0031!important;
+  border-color: inherit;
+
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+/*********************
+BASE STYLE for Aesthetics Only
+*********************/
+
+body {
+	background-color: #e6e7e8;
+	color: #000000;
+	margin-top: 3%;
+}
+
+.container {
+	background-color: #ffffff;
+	width: 75%;
+	padding: 1.5%;
+}
+
+h2 {
+	color: #F79420;
+	padding-bottom: 1.5%;
+}
+</style>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h2>Text Strikethrough</h2>
+        <span class="strikethrough">Deleted text</span>
+        <br><br>
+        <p>A Strikethrough can be useful in various situations. It's very easy to add a strikethrough to your text via CSS Stylesheets.</p>
+        <p><i>Please note, that in some earlier versions of Internet Explorer; the strikethrough won't work.</i></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
